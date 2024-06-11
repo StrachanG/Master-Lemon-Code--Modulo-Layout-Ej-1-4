@@ -1,0 +1,48 @@
+@use "base" as *;
+
+@mixin generate-colors($base-color) {
+    .base-color { background-color: $base-color; }
+
+    @for $i from 1 through 4 {
+        .darken-#{$i} {
+            background-color: darken($base-color, $i * 10%);
+        }
+        .lighten-#{$i} {
+            background-color: lighten($base-color, $i * 10%);
+        }
+    }
+}
+
+.box {
+    padding: $box-padding;
+    border-radius: $box-border-radius;
+    font: {
+        size: $box-font-size;
+        weight: bold;
+    }
+    .color-box-text { color: white; }
+}
+
+div.container-main {
+    display: flex;
+    flex-direction: column;
+    gap: $container-gap;
+
+    div.container-1 {
+        display: flex;
+        gap: $container-gap;
+        @include generate-colors($box-base-color);
+    }
+
+    div.container-2 {
+        display: flex;
+        gap: $container-gap;
+        @include generate-colors($box-base-color-2);
+    }
+
+    div.container-3 {
+        display: flex;
+        gap: $container-gap;
+        @include generate-colors($box-base-color-3);
+    }
+}

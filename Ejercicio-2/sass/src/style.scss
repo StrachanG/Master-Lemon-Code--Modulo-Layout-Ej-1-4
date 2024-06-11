@@ -1,0 +1,22 @@
+// Para Usar un tema u otro, simplemente descomenta uno y comenta el otro.
+
+@use "blue" as *;
+// @use "red" as *;  
+
+@mixin generate-colors($base-color) {
+    .base-color { background-color: $base-color; }
+
+    @for $i from 1 through 4 {
+        .darken-#{$i} { background-color: darken($base-color, $i * 10%); }
+        .lighten-#{$i} { background-color: lighten($base-color, $i * 10%); }
+    }
+}
+
+.box { padding: $box-padding; border-radius:$box-border-radius-theme; box-shadow: $box-shadow-theme;
+    font: { size: $box-font-size; weight: bold; family:$box-font-family-theme; }
+    .color-box-text { color: white; }
+}
+
+div.container-1 { width: 100px; display: flex; flex-direction: column; gap: $container-gap; 
+    @include generate-colors($box-base-color);
+}

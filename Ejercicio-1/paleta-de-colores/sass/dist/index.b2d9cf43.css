@@ -1,0 +1,140 @@
+.box {
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box .color-box-text {
+  color: #fff;
+}
+
+div.container-main {
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+}
+
+div.container-main div.container-1 {
+  gap: 10px;
+  display: flex;
+}
+
+div.container-main div.container-1 .base-color {
+  background-color: #00f;
+}
+
+div.container-main div.container-1 .darken-1 {
+  background-color: #00c;
+}
+
+div.container-main div.container-1 .lighten-1 {
+  background-color: #33f;
+}
+
+div.container-main div.container-1 .darken-2 {
+  background-color: #009;
+}
+
+div.container-main div.container-1 .lighten-2 {
+  background-color: #66f;
+}
+
+div.container-main div.container-1 .darken-3 {
+  background-color: #006;
+}
+
+div.container-main div.container-1 .lighten-3 {
+  background-color: #99f;
+}
+
+div.container-main div.container-1 .darken-4 {
+  background-color: #003;
+}
+
+div.container-main div.container-1 .lighten-4 {
+  background-color: #ccf;
+}
+
+div.container-main div.container-2 {
+  gap: 10px;
+  display: flex;
+}
+
+div.container-main div.container-2 .base-color {
+  background-color: #c2b21d;
+}
+
+div.container-main div.container-2 .darken-1 {
+  background-color: #968916;
+}
+
+div.container-main div.container-2 .lighten-1 {
+  background-color: #e0cf32;
+}
+
+div.container-main div.container-2 .darken-2 {
+  background-color: #696110;
+}
+
+div.container-main div.container-2 .lighten-2 {
+  background-color: #e7da5e;
+}
+
+div.container-main div.container-2 .darken-3 {
+  background-color: #3d3809;
+}
+
+div.container-main div.container-2 .lighten-3 {
+  background-color: #eee48a;
+}
+
+div.container-main div.container-2 .darken-4 {
+  background-color: #110f02;
+}
+
+div.container-main div.container-2 .lighten-4 {
+  background-color: #f4eeb7;
+}
+
+div.container-main div.container-3 {
+  gap: 10px;
+  display: flex;
+}
+
+div.container-main div.container-3 .base-color {
+  background-color: red;
+}
+
+div.container-main div.container-3 .darken-1 {
+  background-color: #c00;
+}
+
+div.container-main div.container-3 .lighten-1 {
+  background-color: #f33;
+}
+
+div.container-main div.container-3 .darken-2 {
+  background-color: #900;
+}
+
+div.container-main div.container-3 .lighten-2 {
+  background-color: #f66;
+}
+
+div.container-main div.container-3 .darken-3 {
+  background-color: #600;
+}
+
+div.container-main div.container-3 .lighten-3 {
+  background-color: #f99;
+}
+
+div.container-main div.container-3 .darken-4 {
+  background-color: #300;
+}
+
+div.container-main div.container-3 .lighten-4 {
+  background-color: #fcc;
+}
+/*# sourceMappingURL=index.b2d9cf43.css.map */
